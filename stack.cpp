@@ -15,6 +15,7 @@ void stack::init()
 {
 tos=0;
 }
+
 void stack::push()
 {
  int i;
@@ -28,6 +29,7 @@ cin>>i;
 stck[tos]=i;
 tos++;
 }
+
 int stack::pop()
 {
 if(tos==0)
@@ -39,6 +41,7 @@ tos--;
  cout<<”popped element is”<<stck[tos];
 return 0;
 }
+
 void stack::display()
 {
 if(tos==0)
@@ -51,6 +54,8 @@ for(int i=0;i<tos;i++)
 cout<<stck[i]<<"\n";
 }
 }
+
+
 int main()
 {
 int ch,i;
